@@ -385,4 +385,7 @@ nav .resi{
     .copyright{
         font-size: 14px;
     }
+    .about-col-1 img{
+        width: 250px;
+    }
 }
