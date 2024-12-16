@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <title>Digamber's Portfolio</title>
+</head>
+<body>
+    <div id="header"> 
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>   
+                <i class="resi ri-close-fill" onclick="closemenu()"></i>             
+            </ul>
+            <i class="resi ri-menu-line" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Android App Developer</p>
+            <h1>Hi, I'm <span>Digamber</span>, <br> From India</h1>
+        </div>
+    </div>    
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p style="text-indent: 60px;">Hi, I’m Digamber Lohar, a final-year Bachelor of Computer Science (BCS) student with a passion for technology and problem-solving. My skill set includes proficiency in programming languages like C, C++, Java, and web technologies such as HTML, CSS, JavaScript, and XML. I enjoy building efficient and engaging solutions, whether it’s developing responsive websites or crafting robust Android applications.</p>
+
+                    <p style="text-indent: 60px;">Beyond academics and coding, I’m a strategist at heart, often indulging in a game of chess to sharpen my analytical thinking. Music is my go-to source of inspiration, fueling my creativity and focus.</p> 
+                        
+                    <p style="text-indent: 60px;">I’m always eager to take on new challenges, learn from others, and collaborate on exciting projects. Let’s connect and create something impactful together!</p> 
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Desining Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app development </li>
+                            <li><span>App Development</span><br>Building Android apps</li>                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Projects">
+                        <ul>
+                            <li><span>Noughts and Crosses</span><br>Developed a two player game</li>
+                            <li><span>Salary Division app</span><br>Developed a working application to divide salary.<li>
+                            <li><span>BMI Calculator</span><br>Application to calculate our BMI</li>
+                            <li><span>SGPA Converter</span><br>Application to Convert SGPA to Percentage (%)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Corrent (2025)</span><br>BCS From Hi-Tech MGMTCS Aurangabad</li>
+                            <li><span>2021</span><br>HSC From Raja Shivaji College Aurangabad </li>
+                            <li><span>2019</span><br>SSC From Shahid Bhagatsing School Aurangabad</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- SERVICES SECTION -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Experties</h1>
+            <div class="services-list">
+                <div>
+                    <i class="ri-code-s-slash-line"></i>
+                    <h2>Web Design</h2>
+                    <p>Web designing is the art of crafting visually appealing and user-friendly websites. By combining creativity with technologies like HTML, CSS, and JavaScript, I create responsive designs that ensure seamless functionality across devices. My focus is on delivering intuitive and engaging user experiences that leave a lasting impression.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="ri-crop-line"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI/UX design focuses on creating user-friendly interfaces and enhancing the overall user experience of digital products. While UI (User Interface) design emphasizes the visual elements like layout, colors, and typography, UX (User Experience) design ensures seamless functionality, intuitive navigation, and user satisfaction. Together, they aim to deliver engaging and accessible designs that meet user needs while achieving business goals.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="ri-android-line"></i>
+                    <h2>App Design</h2>
+                    <p>Android app design involves creating visually appealing, user-friendly, and functional mobile applications for Android devices. The process focuses on building intuitive interfaces that align with Android’s design principles, ensuring a seamless user experience. By combining creativity with Android development tools like XML, Java, and Kotlin, the goal is to deliver apps that are easy to navigate, responsive, and optimized for a wide range of Android devices.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+
+        </div>
+     </div>
+
+<!-- ---------PORTFOLIC SECTION------------------ -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Salary Division App</h3>
+                        <p>The app helps you to spilt your expences regarding your salary and helps to save your money in smarter way,Download it from here. </p>
+                        <a href="#"><i class="ri-external-link-fill"></i></a>
+                    </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Noughts and Crosses</h3>
+                    <p>The two player intresting game for playing with your friends and it's ads free, Download it from here. </p>
+                    <a href="#"><i class="ri-external-link-fill"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>BMI Calculator</h3>
+                    <p>The app will instantly calculate your body-mass index, smarter way to understand your fitness, Download it from here. </p>
+                    <a href="#"><i class="ri-external-link-fill"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>  
+    </div>
+ </div>
+
+ <!-- =================CONTACT SECTION============================ -->
+  <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="ri-send-plane-fill"></i> digamberlohar555@gmail.com</p>
+                <p><i class="ri-phone-fill"></i>7249581630</p>
+                <div class="social-icons">
+                    <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                    <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+                </div>
+                <a href="resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your email" required>
+                    <textarea type="text" name="Meassage" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2 ">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Digamber. Made by Digamber Lohar</p>
+    </div>
+  </div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>    
+<script>
+        var sidemenu= document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-140px";
+        }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxbgN2tFl7Zt_hHDkPMc6SJtrV-qORZg3MbMB2rMZ2VdM8-RTDob1f6t39OaGwCp5Uq/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg =  document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully....!"
+            setTimeout(function() {
+                msg.innerHTML = ""
+            },4000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
